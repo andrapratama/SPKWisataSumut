@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tempatwisata"
+            android:icon="@drawable/ic_wallpaper_black_24dp"
+            android:title="Tempat Wisata" />
+        <item
+            android:id="@+id/nav_penilaian"
+            android:icon="@drawable/ic_mode_edit_black_24dp"
+            android:title="Penilaian" />
+        <item
+            android:id="@+id/nav_perhitungan"
+            android:icon="@drawable/ic_equalizer_black_24dp"
+            android:title="Hasil Perhitungan" />
+    </group>
+
+</menu>

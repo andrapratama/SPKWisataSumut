@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_penilaian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.andrasatriapratama.android.spkwisatasumut.PenilaianProses">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penilaian untuk : " />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biaya"
+                android:textStyle="bold" />
+
+            <!-- Radio Group Biaya -->
+            <RadioGroup
+                android:id="@+id/rgBiaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbBiaya5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Sangat Banyak" />
+
+                <RadioButton
+                    android:id="@+id/rbBiaya4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Lumayan Banyak" />
+
+                <RadioButton
+                    android:id="@+id/rbBiaya3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Sedang" />
+
+                <RadioButton
+                    android:id="@+id/rbBiaya2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Sedikit" />
+
+                <RadioButton
+                    android:id="@+id/rbBiaya1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Sangat Sedikit" />
+            </RadioGroup>
+            <!-- Akhir Radio Group Biaya -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fasilitas"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgFasilitas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbFasilitas5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat Baik Sekali" />
+
+                <RadioButton
+                    android:id="@+id/rbFasilitas4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat Baik" />
+
+                <RadioButton
+                    android:id="@+id/rbFasilitas3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baik" />
+
+                <RadioButton
+                    android:id="@+id/rbFasilitas2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cukup Baik" />
+
+                <RadioButton
+                    android:id="@+id/rbFasilitas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kurang Baik" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Transportasi"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgTransportasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbTransportasi5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semua Jenis Transportasi" />
+
+                <RadioButton
+                    android:id="@+id/rbTransportasi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hampir Semua Transportasi" />
+
+                <RadioButton
+                    android:id="@+id/rbTransportasi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sebagian Jenis Transportasi" />
+
+                <RadioButton
+                    android:id="@+id/rbTransportasi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sedikit Jenis Transportasi" />
+
+                <RadioButton
+                    android:id="@+id/rbTransportasi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hanya Satu Jenis Transportasi" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Keindahan"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgKeindahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbKeindahan5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat Indah Sekali" />
+
+                <RadioButton
+                    android:id="@+id/rbKeindahan4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat Indah" />
+
+                <RadioButton
+                    android:id="@+id/rbKeindahan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indah" />
+
+                <RadioButton
+                    android:id="@+id/rbKeindahan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cukup Indah" />
+
+                <RadioButton
+                    android:id="@+id/rbKeindahan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kurang Indah" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Waktu"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgWaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbWaktu5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat Lama Sekali" />
+
+                <RadioButton
+                    android:id="@+id/rbWaktu4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat Lama" />
+
+                <RadioButton
+                    android:id="@+id/rbWaktu3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lama" />
+
+                <RadioButton
+                    android:id="@+id/rbWaktu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cukup Lama" />
+
+                <RadioButton
+                    android:id="@+id/rbWaktu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Lama" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Jarak"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgJarak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbJarak5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat Jauh Sekali" />
+
+                <RadioButton
+                    android:id="@+id/rbJarak4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat Jauh" />
+
+                <RadioButton
+                    android:id="@+id/rbJarak3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jauh" />
+
+                <RadioButton
+                    android:id="@+id/rbJarak2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cukup Jauh" />
+
+                <RadioButton
+                    android:id="@+id/rbJarak1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Jauh" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

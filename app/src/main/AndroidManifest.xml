@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andrasatriapratama.android.spkwisatasumut">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TempatWisata"
+            android:label="Tempat Wisata"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Penilaian"
+            android:label="Penilaian"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Perhitungan"
+            android:label="Hasil Perhitungan"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".PenilaianProses"
+            android:label="Penilaian Kriteria"
+            android:parentActivityName=".Penilaian">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Penilaian" />
+        </activity>
+        <activity
+            android:name=".PenilaianData"
+            android:label="Data Penilaian"
+            android:parentActivityName=".Penilaian">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Penilaian" />
+        </activity>
+    </application>
+
+</manifest>
